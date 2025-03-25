@@ -1,0 +1,9 @@
+enc_key = 0x000102030405060708090A0B0C0D0E0F
+mac_key = 0x000102030405060708090A0B0C0D0E0F
+nonce = 0x00112233445566778899AABBCCDDEEFF
+data = 0x000102030405060708090A0B0C0D0E0F101112131415161718191A1B1C1D1E1F
+aad = b''
+
+lucky_13(c, nonce, 0, oracle) = [b'\x0e\x0f']
+lucky_13(c, nonce, 1, oracle) = [b'\x1e\x1f']
+lucky_13(c, nonce, 3, oracle) = [b'\x01\x01', b'\x0f\x0f']
